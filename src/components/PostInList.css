@@ -1,0 +1,12 @@
+.Thought {
+    font-family: 'Dosis', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.Thought h2 {
+    font-size: 24px;
+}

@@ -1,0 +1,8 @@
+.App {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f1f7;
+    border-color: purple;
+    border-width: 1px;
+    border-style: solid;
+}

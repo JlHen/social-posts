@@ -1,7 +1,74 @@
-.NewPost {
-    width: 80%;
+.NewThoughtForm {
+    position: relative;
+    width: 20%;
     margin: 10px auto auto;
     border: 2px solid black;
     border-radius: 5px;
     background-color: #79c5e8;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+
+.NewPost {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FormLabel {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.TitleField {
+    width: 90%;
+    font-size: 24px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.TitleInput {
+    margin: 10px;
+}
+
+.ThoughtInput {
+    margin: 10px;
+}
+
+.ThoughtField {
+    width: 90%;
+    height: 10em;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    resize: none;
+}
+
+.PostButton {
+    width: 90%;
+    font-size: 24px;
+    font-family: 'Dosis',sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.CancelButton {
+    background: none;
+    border: none;
+    float: right;
+    font-size: 24px;
+    padding: 5px 5px;
 }

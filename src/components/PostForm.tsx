@@ -26,14 +26,18 @@ function NewThoughtModal({existingPosts, addNewPost, closeForm}:Props) {
     }
     return (
         <div className="NewPost">
-            <form className="NewThoughtForm" onSubmit={(event)=>handleSubmit(event)}>
+            <form className="NewThoughtForm" onSubmit={(submitEvent)=>handleSubmit(submitEvent)}>
                 {invalidTitle && <p>Title already used! Titles must be unique!</p>}
-                <label className="TitleLabel" htmlFor="title">Title:</label><br/>
-                <input className="TitleField" required type="text" name="title" id="title" value={title} onChange={(event)=>setTitle(event.target.value)}/><br/>
-                <label className="ThoughtLabel" htmlFor="thought">Thought:</label><br/>
-                <input className="ThoughtField" required type="text" name="thought" id="thought" value={thought} onChange={(event)=>setThought(event.target.value)}/><br/>
-                <button className="PostButton">Post</button>
-                <button className="CancelButton" onClick={closeForm}>Cancel</button>
+                <button className="CancelButton" onClick={closeForm}><i className="material-icons">cancel</i></button>
+                <div className="TitleInput">
+                    <label className="FormLabel" htmlFor="title">Title</label>
+                    <input className="TitleField" required type="text" name="title" id="title" value={title} onChange={(event)=>setTitle(event.target.value)}/>
+                </div>
+                <div className="ThoughtInput">
+                    <label className="FormLabel" htmlFor="thought">Thought</label>
+                    <textarea className="ThoughtField" required name="thought" id="thought" value={thought} onChange={(event)=>setThought(event.target.value)}/>
+                </div>
+                <button className="PostButton">Add Post</button>
             </form>
         </div>
     )

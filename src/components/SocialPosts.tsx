@@ -51,12 +51,12 @@ function SocialPosts() {
         <div className="SocialPosts">
             <h1 className="ThoughtsHeader">My Thoughts</h1>
                 <button className="NewThoughtButton" onClick={()=>setShowNewThoughtForm(true)}>New Thought</button>
-                { showNewThoughtForm && <NewThoughtModal existingPosts={posts} addNewPost={addPost} closeForm={hideForm}/>}
                 <div className="Thoughts">
                     <ul>
                         {posts.map((post)=><PostInList key={post.title} post={post} signalDelete={deletePost} upvotePost={upvotePost}/>)}
                     </ul>
                 </div>
+                { showNewThoughtForm && <NewThoughtModal existingPosts={posts} addNewPost={addPost} closeForm={hideForm}/>}
         </div>
     )
 }

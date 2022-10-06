@@ -1,0 +1,7 @@
+.NewPost {
+    width: 80%;
+    margin: 10px auto auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #79c5e8;
+}
